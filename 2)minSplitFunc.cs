@@ -13,9 +13,9 @@ namespace minSplitFun
             Console.WriteLine($" Minimum amount of coins needed is {minSplit(Amount, coins)} ");
         }
 
-        static int minSplit(int amount)
+        static int minSplit(int amount, int[] coins)
         {
-            int[] coins = new int[] { };
+            
             // Creating table for storing minimum amount of coins for i value
             int[] table = new int[amount + 1];
             table[0] = 0;
